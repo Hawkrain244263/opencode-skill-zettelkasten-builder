@@ -1,4 +1,4 @@
-﻿# opencode-skill-zettelkasten-builder
+# opencode-skill-zettelkasten-builder
 
 从零搭建 Obsidian 卡片盒笔记库，优先帮你整理旧笔记。不预设任何知识背景，各行各业的人都能上手。
 
@@ -10,11 +10,11 @@
 
 ## 安装
 
-1. 将 ZettelkastenBuilder/ 复制到 opencode skills 目录：
+1. 将 `ZettelkastenBuilder/` 复制到 opencode skills 目录：
 
-   `ash
+   ```bash
    cp -r ZettelkastenBuilder ~/.config/opencode/skills/
-   `
+   ```
 
 2. 在 opencode 中触发即可使用。
 
