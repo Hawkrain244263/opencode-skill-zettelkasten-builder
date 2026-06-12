@@ -1,41 +1,56 @@
-# opencode-skill-zettelkasten-builder
+# ZettelkastenBuilder
 
-从零搭建 Obsidian 卡片盒笔记库，优先帮你整理旧笔记。不预设任何知识背景，各行各业的人都能上手。
+> 从零搭建 Obsidian 卡片盒笔记库，同时教会你怎么用这套系统。
 
-## 简介
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-ZettelkastenBuilder-blue)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-这是一个 [opencode](https://opencode.ai) skill。帮你从零搭建一套自己的 Obsidian Zettelkasten（卡片盒笔记法）系统，不只搭个架子就走人——在搭的过程中，教会你这套东西到底怎么用、为什么好用。
+## 这是什么
+
+一个 opencode skill。帮你从零搭建一套自己的 Obsidian Zettelkasten（卡片盒笔记法）系统。不只搭个架子就走人——在搭的过程中，教会你这套东西到底怎么用、为什么好用。
 
 **核心特色**：如果你手头有旧笔记，流程会优先帮你把旧笔记整理进卡片盒结构，不留空壳，只按内容归类。整理完再开始教学。
 
 ## 安装
 
-1. 将 `ZettelkastenBuilder/` 复制到 opencode skills 目录：
-
-   ```bash
-   cp -r ZettelkastenBuilder ~/.config/opencode/skills/
-   ```
-
-2. 在 opencode 中触发即可使用。
+```bash
+# 将 ZettelkastenBuilder/ 复制到 opencode skills 目录
+cp -r ZettelkastenBuilder ~/.config/opencode/skills/
+```
 
 ## 使用
 
-| 触发语 | 行为 |
-|--------|------|
-| "搭建知识库""卡片盒入门""帮我建个卡片系统""从零开始记笔记" | 执行完整 7 阶段流程 |
+| 你说 | AI 做什么 |
+|------|----------|
+| "搭建知识库""卡片盒入门" | 执行完整 7 阶段流程 |
 | "帮我整理旧笔记""清理一下笔记" | 直接进入旧笔记整理阶段 |
+| "帮我建个卡片系统""从零开始记笔记" | 同上，从头开始 |
 
-## 流程
+## 流程概览
 
 | 阶段 | 时长 | 内容 |
 |------|------|------|
-| Phase 1 — 摸底 | ~5 分钟 | 了解用户背景、现有笔记、关注领域 |
+| Phase 1 — 摸底 | ~5 分钟 | 了解你的背景和需求 |
 | Phase 2 — 理念 | ~10 分钟 | 卡片盒原理 + 必要难度理论 |
 | Phase 3 — 搭架构 | ~15 分钟 | 建目录结构、写 Obsidian 配置 |
-| **Phase 4 — 迁移旧笔记** | **~20 分钟** | **全量扫描 → 角色归类 → 报告 → 迁移 → 清空壳** |
-| Phase 5 — 教学 | ~15 分钟 | Markdown 语法、卡片/HQ&A 模板、命名规则 |
-| Phase 6 — 选做制卡 | 可选 | 用户有兴趣才做，可跳过 |
+| Phase 4 — 迁移旧笔记 | ~20 分钟 | 全量扫描 → 归类 → 迁移 → 清空壳 |
+| Phase 5 — 教学 | ~15 分钟 | 模板、命名规则、语法 |
+| Phase 6 — 选做制卡 | 可选 | 你亲手做第一张卡片 |
 | Phase 7 — 收尾 | ~5 分钟 | 入门清单 + 架构文档 + 进阶推荐 |
+
+## 核心理念
+
+- **AI 不碰卡片正文**——帮你想思路、搭框架，但正文必须你自己写
+- **一张卡一个观点**——每张卡片只写一个经过自己消化的想法
+- **用链接代替分类**——不靠文件夹，靠 `[[双向链接]]` 串起知识网络
+- **过两问再制卡**——"我为什么要写这个想法？我能拿它干什么？"
+
+## 安全边界
+
+- AI 不会代替你写任何卡片正文
+- 不会删除你的旧文件
+- 不会修改你已有的卡片和笔记
+- 不会批量生成卡片
 
 ## 许可
 

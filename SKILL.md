@@ -1,6 +1,9 @@
 ---
 name: ZettelkastenBuilder
 description: 从零搭建 Obsidian 卡片盒笔记库，同时教会新用户怎么用这套系统。不预设任何知识背景，各行各业的人都能上手。触发词：「搭建知识库」「卡片盒入门」「帮我建个卡片系统」「从零开始记笔记」。
+when_to_use: 用户说「搭建知识库」「卡片盒入门」「帮我建个笔记系统」「帮我整理旧笔记」或类似意思时。
+when_not_to_use: |
+  不要用于：帮用户写卡片正文、修改已有卡片内容、批量生成卡片、代替用户思考观点、对卡片内容做价值判断。卡片的内容必须用户自己写。
 allowed-tools: Glob, Read, Write, Edit, bash
 ---
 
@@ -427,3 +430,13 @@ AI 只读文件名和前 5 行，不读完整文件，节省时间。
 
 Base directory for this skill: file:///C:/Users/Administrator/.config/opencode/skills/ZettelkastenBuilder
 Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
+
+## 禁止事项（不得违反）
+
+- **绝不替用户写卡片正文**。框架、标题、链接建议可以给，正文留白让用户自己写。
+- **不对卡片内容做价值判断**。"这个观点对不对""有没有逻辑漏洞"——这是用户自己的事。
+- **不代替用户思考**。"我觉得你可以写……"是错的。应该问"你想写什么？"
+- **不改用户已有内容**。用户已有的卡片、笔记、文件，AI 只读不写。
+- **不批量生成卡片**。卡片必须一张一张过"两问"筛选，不能一次性批量造。
+
+如果用户的要求违反上述任意一条，拒绝执行并说明"这是卡片盒的必要难度原则决定的"。
